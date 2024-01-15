@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class=" main-con">
+    <div class="form-main-container">
+        <h1>User Registration Form</h1>    
+        <form id="form" class="form-container">
+        <div class="input-container">
+            <label for="username">User Name</label>
+            <input required class="input-filed" id="username" type="text" placeholder="Enter user name" pattern="[a-zA-Z]{5,15}" name="name"/>
+            <p class="input-error-msg"></p>
+        </div>
+        <div class="input-container">
+            <label for="useremail">User Email</label>
+            <input required class="input-filed" id="useremail" type="email" placeholder="Enter Your Mail" name="email"/>
+            <p class="mail-error-msg"></p>
+        </div>
+        <div class="input-container">
+            <label for="userpassword">Enter your password</label>
+            <input required class="input-filed" id="userpassword" type="password" placeholder="Enter Your Password" name="password"/>
+            <p class="password-error-msg"></p>
+        </div>
+        <div class="input-container">
+            <label for="confirmpassword">Enter confirm Password</label>
+            <input required class="input-filed" id="confirmpassword" type="password" placeholder="Enter Your Confirm Passsword" name="confirmpassword"/>
+            <p class="confirm-password-error-msg"></p>
+        </div>
+        <div class="input-container">
+            <label for="dateofbirth">Date Of Birth</label>
+            <input required class="input-filed" id="dateofbirth" type="date" />
+            <p class="dob-error-msg"></p>
+        </div>
+
+        <div class="gender-section">
+            <p class="gen">Gender</p>
+            <div class="gender-options-main-container">
+                <div class="individual-section">
+                    <input id="male" type="radio" name="gender" checked/>
+                    <label for="male">Male</label>
+                </div>
+                <div class="individual-section">
+                    <input id="female" type="radio" name="gender"/>
+                    <label for="female">Female</label>
+                </div>
+                <div class="individual-section">
+                    <input id="others" type="radio" name="gender"/>
+                    <label for="other">others</label>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="input-container">
+            <label for="Countries">Countries</label>
+            <select id="Countries">
+                <option value="india" selected>India</option>
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="australia">Australia</option>
+            </select>
+        </div>
+
+        <div class="terms-and-conditions">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I accept the terms and conditions</label>
+          </div>
+          <div class="button-container">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+
+    </div>
+    <div class="belowcontainer">
+    </div>
+</div> 
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
